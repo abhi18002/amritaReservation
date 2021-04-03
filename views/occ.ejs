@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="/css/occ.css">
+
+<div class="movie-container">
+  <label>Pick a FLOOR:</label>
+  <select id="movie">
+    <option value="0">GROUND </option>
+    <option value="1">FIRST</option>
+    <option value="2">SECOND</option>
+  </select>
+  &nbsp; &nbsp; &nbsp;
+
+  <label>Pick a Day:</label>
+  <select id="day">
+    <option value="1">Monday </option>
+    <option value="2">Tuesday</option>
+    <option value="3">Wednesday</option>
+    <option value="4">Thursday</option>
+    <option value="5">Friday</option>
+    <option value="6">Saturday</option>
+  </select>
+  &nbsp;
+  &nbsp; &nbsp;
+
+  <label>Pick a Slot:</label>
+  <select id="slot">
+    <option value="1">First  - 8:30 AM -9:20 AM </option>
+    <option value="2">Second - 9:20 AM  - 10:10 AM</option>
+    <option value="3">Third  - 10:20 AM  - 11:10 AM</option>
+    <option value="4">Fourth - 11:10 AM  - 12:00 PM </option>
+    <option value="5">Fifth  - 2:00 PM - 2:50 PM</option>
+    <option value="6">Sixth  - 2:50 PM - 3:40 PM</option>
+    <option value="7">Lab1   - 8:30 AM -10:10 AM </option>
+    <option value="8">Lab2   - 10:20 AM  - 12:00PM</option>
+    <option value="9">Lab3   - 2:00 PM - 3:40 PM</option>
+  </select>
+</div>
+
+<ul class="showcase">
+  <li>
+    <div class="seat"></div>
+    <small>N/A</small>
+  </li>
+  <li>
+    <div class="seat selected"></div>
+    <small>Selected</small>
+  </li>
+  <li>
+    <div class="seat occupied"></div>
+    <small>Occupied</small>
+  </li>
+</ul>
+
+<div class="container">
+  <div class="screen"></div>
+
+  <div class="row">
+    <div class="seat" value="200"></div>
+    <div class="seat" value="201"></div>
+    <div class="seat" value="203"></div>
+    <div class="seat" value="204"></div>
+    <div class="seat" value="205"></div>
+    <div class="seat" value="206"></div>
+    <div class="seat" value="207"></div>
+    <div class="seat" value="208"></div>
+  </div>
+  <div class="row">
+    <div class="seat"value="209"></div>
+    <div class="seat"value="210"></div>
+    <div class="seat"value="211"></div>
+    <div class="seat occupied" value="212"></div>
+    <div class="seat occupied"value="213"></div>
+    <div class="seat"value="214"></div>
+    <div class="seat"value="215"></div>
+    <div class="seat"value="216"></div>
+  </div>
+  <div class="row">
+    <div class="seat"value="217"></div>
+    <div class="seat"value="218"></div>
+    <div class="seat"value="219"></div>
+    <div class="seat"value="220"></div>
+    <div class="seat"value="221"></div>
+    <div class="seat"value="222"></div>
+    <div class="seat occupied"value="223"></div>
+    <div class="seat occupied"value="224"></div>
+  </div>
+
+</div>
+
+<p class="text">
+  You have selected <span id="count">0</span>
+</p>
+
+<script src="/js/occ.js"></script>
+
+<%- include("partial/footer.ejs") -%>
