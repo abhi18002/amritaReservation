@@ -33,7 +33,8 @@ font-size: 40px;
   appearance: none;
 }
 
-.container {
+.container { 
+
   perspective: 1000px;
   margin-bottom: 30px;
 }
@@ -109,8 +110,10 @@ font-size: 40px;
 
 p.text {
   margin: 5px 0;
+
 }
 
 p.text span {
   color: #6feaf6;
+
 }

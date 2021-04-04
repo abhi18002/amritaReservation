@@ -2,12 +2,10 @@
 
 <script src="/js/dash.js"></script>
 <link rel="stylesheet" href="/css/dash.css">
-
 <div class="">
-
 <div class="bubbles">
-  <h1 >Welcome  <strong> <%=user.name%></strong></h1>
-</div>
+  <h1 >Welcome <strong> <%=user.name%></strong></h1>
+  <button type="button" class="log" onclick="location.href='/'">LOGOUT</button>
 <div class="circle">
   <div class="ring">
     <a  class="menuItem fa fa-home fa-2x" data-toggle="tooltip" data-placement="auto" title="Home" href="/"></a>
@@ -20,7 +18,8 @@
   </div>
   <a href="#" class="center fa fa-th fa-2x"></a>
 </div>
-
 <img src="/img/prof.png" class="avatar" alt="">
 </div>
+</div>
+
 <%- include("partial/footer.ejs") -%>
