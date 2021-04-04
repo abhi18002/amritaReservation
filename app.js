@@ -47,7 +47,7 @@ app.get("/time",function(req,res){
 });
 
 app.get("/log",function(req,res){
-res.render("log");
+res.render("log",{users:users});
 //res.sendFile("log.html")
 });
 app.get("/occ",function(req,res){
@@ -58,15 +58,18 @@ res.render("reserve");
 });
 
 app.post("/dash",function(req,res){
-  signin = true;
-name = req.body.name;
- res.redirect("dash"+"/"+name);
-});
+
+    signin = true;
+  name = req.body.name;
+   res.redirect("dash"+"/"+name);   
+
+ });
+
 
 
 app.get("/dash/:link",function(req,res){
 const links = req.params.link;
-const user =  users.find( o => o.username === links);
+const user =  users.find( o => o.username === links );
 
 if( user){
 res.render("dash",{user:user})
@@ -89,4 +92,9 @@ app.post("/noti",function(req,res){
 
 requests.push(reqs);
 res.render("noti",{requests:requests});
+});
+
+
+app.get("/reqC",function(req,res){
+  res.sendFile(__dirname+"/reqC.html");
 });
